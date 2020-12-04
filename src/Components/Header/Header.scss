@@ -1,0 +1,59 @@
+@import "../../assets/Colors/Colors.scss";
+@import "../../assets/Fonts/Fonts.scss";
+
+.header {
+  background-color: $primary-color;
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  position: fixed;
+  color: $secondary-color;
+
+  &__description {
+    margin-top: 1em;
+    width: 30em;
+    margin-left: 7em;
+    font-family: $font-primary;
+    h2 {
+      font-size: 40px;
+      font-family: $font-heading;
+    }
+    p {
+      width: 450px;
+      padding-top: 60px;
+      font-size: 20px;
+      line-height: 40px;
+    }
+  }
+
+  &__button {
+    margin-top: 100px;
+    margin-left: 7em;
+
+    button {
+      border: 3px solid #fd8e8e;
+      border-radius: 999px;
+      height: 4em;
+      width: 20em;
+      background-color: transparent;
+      font-family: $font-primary;
+      font-size: 15px;
+      color: $secondary-color;
+      cursor: pointer;
+      
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  &__links {
+    margin-top: 50px;
+    margin-left: 7em;
+    font-family: $font-primary;
+    line-height: 30px;
+  }
+}
